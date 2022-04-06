@@ -1,5 +1,6 @@
+
 # Datascience SQL
-This is a python project with sql scripts for setting up the database used by the web application.
+This is a python project with sql scripts for setting up the database used by the web application. For parsing the data to files that can be used by this python project we redirect you to [\[this\]](https://github.com/Medooosa/Csharp-Parser) C# project. When the setup of the database is complete using we will redirect you to [\[this\]](https://github.com/sidneydijkstra/DatascienceWeb/) node.js project.
 
 ### Dependencies  
 This list contains all the dependencies used by the project.
@@ -16,7 +17,7 @@ pip install sqlparse
 ```
 
 ### Env
-For parsing the data to files that can be used by this python project we redirect you to [\[this\]](https://github.com/Medooosa/Csharp-Parser) C# project. The connection with the database is established using the variables in the .env file. Create this file and add these parameters to connect with the database.
+A connection with the database is established using the variables in the .env file. Create this file and add these parameters to connect with the database:
 ```
 DATABASE_IP=
 DATABASE_PORT=
@@ -26,6 +27,8 @@ DATABASE_PASSWORD=
 
 ### Run
 For running the project we can use a easy python command and need a folder containing all the data files. The location of this folder can be changed in the file 'raw_db_fill.sql'.
+
+Command:
 ```
 python __init__.py
 ```
